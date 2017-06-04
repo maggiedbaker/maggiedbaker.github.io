@@ -22,27 +22,15 @@
 					<h1 id="logo"><a href="index.html">Maggie Baker</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
 							<li class="submenu">
-								<a href="#">Layouts</a>
+								<a href="#">Menu</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li class="submenu">
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
-										</ul>
-									</li>
+									<li><a href="#main" class="scrolly">About</a></li>
+									<li><a href="#skills" class="scrolly">Skills</a></li>
+									<li><a href="#work" class="scrolly">Work</a></li>
+									<li><a href="#contact" class="scrolly">Contact</a></li>
 								</ul>
 							</li>
-							<li><a href="#" class="button special">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -76,15 +64,17 @@
 
 			<!-- Main -->
 				<article id="main">
-
 					<header class="special container">
 						<span class="icon fa-angle-double-down"></span>
 						<h2>About</h2>
-						<p id="about-text">With a background in marketing strategy and the fine arts, I bring a curiosity for disruption and an affinity for elegant design to my career as a developer. I have worked on a wide variety of projects in an agile, collaborative environment, from an e-commerce site for construction parts to a portable bomb-scanning imaging tool to a job-matching application for traveling nurses. I strive to constantly improve and expand upon my skillset, and my latest learning project is React.js. 
+						<p id="about-text">With a background in marketing strategy and the fine arts, I bring a curiosity for disruption and an affinity for intelligent design to my career as a developer. I have worked on a wide variety of projects in an agile, collaborative environment, from an e-commerce site for construction parts to a portable bomb-scanning imaging tool to a job-matching application for traveling nurses. I strive to constantly improve and expand upon my skillset, and my latest learning project is React.js. 
 						</p>
 					</header>
+					
+					<article id="skills"></article>
 
 					<!-- One -->
+					<div style="height:3rem"></div>
 						<section class="wrapper style2 container special-alt" style="padding-top:2rem">
 							<div class="row 50%">
 								<div class="12u 12u(narrower) skills">
@@ -112,9 +102,9 @@
 										Agile, RESTful design, MVC, Object-oriented design</p>
 									</div>
 									<footer>
-										<ul class="buttons">
+										<!--<ul class="buttons">
 											<li><a href="#" class="button">See full resume</a></li>
-										</ul>
+										</ul>-->
 									</footer>
 
 								</div>
@@ -161,34 +151,22 @@
 						</section>-->
 
 					<!-- Three -->
+					<article id="work"></article>
 						<section class="wrapper style3 container special">
 
 							<header class="major">
-								<h2>Work Samples</h2>
+								<h2>Work</h2>
 							</header>
 
 							<div class="row">
 								<div class="portfolio 12u 12u(narrower)">
 
 									<section>
-										<a href="http://shift.healthecareers.com" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="http://shift.healthecareers.com" target="_blank" class="image featured"><img src="images/shift-spire.jpg" alt="" /></a>
 										<header>
 											<h3>Shift</h3>
 										</header>
-										<p>Shift is a web application that matches traveling nurses with potential employers. It is built with the LAMP stack using the Laravel framework, with Backbone.js, jQuery and SCSS on the front end. I have worked on Shift in a small, agile, team at Spire, and my roles have included database migrations, CRUD capabilities for the admin panel, a .csv exporter, configuring email notifications for users and front-end styling.</p>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="portfolio 12u 12u(narrower)">
-
-									<section>
-										<a href="http://trainspotterapp.herokuapp.com" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Trainspotter</h3>
-										</header>
-										<p>Trainspotter is a web application for collaboratively making and sharing themed collections of photos. It was made in seven days as my final group project for coding school, and I served as project lead in a team of three. Trainspotter is a Ruby on Rails application with the Foundation framework, jQuery and Ajax on the front end. It also integrates the Auth0 API for muti-platform authentication.</p>
+										<p><a href="http://shift.healthecareers.com" target="_blank">Shift</a> is a web application that matches traveling nurses with potential employers. It is built with the LAMP stack using the Laravel framework, with Backbone.js, jQuery and SCSS on the front end. I have worked on Shift as part of a small, agile, team at Spire Digital, and my roles have included database migrations, CRUD capabilities for the admin panel, .csv exporting functionality, configuring email notifications for users and front-end styling.</p>
 									</section>
 
 								</div>
@@ -220,7 +198,7 @@
 
 							<footer class="major">
 								<ul class="buttons">
-									<li><a href="#" class="button">Contact me to see more</a></li>
+									<li><a href="#contact" class="button">Contact me to see more</a></li>
 								</ul>
 							</footer>
 
@@ -229,34 +207,29 @@
 				</article>
 
 			<!-- CTA -->
+			<article id="contact"></article>
 				<section id="cta">
-
+					<div id="cta-content">
 					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2>Get in Touch</h2>
 					</header>
-					<footer>
-						<ul class="buttons">
-							<li><a href="#" class="button special">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
-						</ul>
-					</footer>
-
+					<ul>
+						<li><a href="mailto:maggiedbaker@gmail.com"><span class="icon icon fa-envelope-o"></span>maggiedbaker@gmail.com</a></li>
+						<li><p><span class="icon icon fa-phone"></span>919.218.6875</p></li>
+					</ul>
+					</div>
 				</section>
 
 			<!-- Footer -->
 				<footer id="footer">
 
 					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://www.linkedin.com/in/maggiedbaker/" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://bitbucket.org/maggiedbaker/" class="icon circle fa-bitbucket"><span class="label">Bitbucket</span></a></li>
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2017 Maggie Baker</li>
 					</ul>
 
 				</footer>
